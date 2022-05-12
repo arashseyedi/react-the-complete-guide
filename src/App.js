@@ -31,12 +31,9 @@ function App() {
   return (
     <div className="container">
       <div className="row justify-content-md-center">
-        <div className="col col-lg-10 expenses">
+        <div className="col col-lg-10">
           <h2>Let's get started!</h2>
-          <Expenses expense={expenses[0]} />
-          <Expenses expense={expenses[1]} />
-          <Expenses expense={expenses[2]} />
-          <Expenses expense={expenses[3]} />
+          <Expenses item={expenses} />
         </div>
       </div>
     </div>
