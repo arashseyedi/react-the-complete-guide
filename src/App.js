@@ -1,4 +1,6 @@
-import Expenses from './components/Expenses';
+import React from 'react';
+import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
   const expenses = [
@@ -32,7 +34,7 @@ function App() {
     <div className="container">
       <div className="row justify-content-md-center">
         <div className="col col-lg-10">
-          <h2>Let's get started!</h2>
+          <NewExpense />
           <Expenses item={expenses} />
         </div>
       </div>

@@ -1,10 +1,10 @@
 
 * {
-    box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background-color: #dddddd;
+    background-color: #333333;
 }

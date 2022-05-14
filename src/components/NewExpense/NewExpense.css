@@ -1,0 +1,45 @@
+.new-expense {
+    display: flex;
+    justify-content: center;
+    width: 24rem;
+    margin: 2rem auto;
+    padding: 1.4rem;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #dcdcdc;
+}
+
+.new-expense__control {
+    margin-bottom: 15px
+}
+
+.new-expense__control:last-child {
+    margin-bottom: 25px
+}
+
+
+.new-expense__controls input {
+    border: none;
+}
+
+.new-expense button {
+    padding: 10px 20px;
+    border: none;
+}
+
+/*.new-expense button:hover,*/
+/*.new-expense button:active {*/
+/*    background-color: #510674;*/
+/*    border-color: #510674;*/
+/*}*/
+
+/*.new-expense button.alternative {*/
+/*    color: #220131;*/
+/*    border-color: transparent;*/
+/*    background-color: transparent;*/
+/*}*/
+
+/*.new-expense button.alternative:hover,*/
+/*.new-expense button.alternative:active {*/
+/*    background-color: #ddb3f8;*/
+/*}*/
