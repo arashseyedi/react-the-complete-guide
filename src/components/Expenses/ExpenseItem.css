@@ -1,14 +1,14 @@
 .expense-item {
-    width: 590px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    /*width: 590px;*/
     margin: .5rem 0;
     padding: 0.5rem;
 }
 
-new-expense
+.new-expense,
 .expense-item__description {
     display: flex;
     align-items: center;
@@ -35,7 +35,30 @@ new-expense
     border-radius: 12px;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 570px) {
+    .expense-item__description {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .expense-item__description h2 {
+        font-size: 1.25rem;
+    }
+
+    .expense-item__price {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .expense-item {
+        max-width: 100%;
+    }
+
     .expense-item__description {
         display: flex;
         align-items: center;

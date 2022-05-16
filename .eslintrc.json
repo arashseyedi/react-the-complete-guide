@@ -33,7 +33,6 @@
     "react/prop-types": 0,
     "react/no-unescaped-entities": 0,
     "no-unused-vars": "off",
-    "react/react-in-jsx-scope": "off",
-    "prettier/prettier": "error"
+    "react/react-in-jsx-scope": "off"
   }
 }

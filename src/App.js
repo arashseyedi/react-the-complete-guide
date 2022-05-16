@@ -30,11 +30,16 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log('In App.js');
+    console.log(expense);
+  };
+
   return (
     <div className="container">
       <div className="row justify-content-md-center">
         <div className="col col-lg-10">
-          <NewExpense />
+          <NewExpense onAddExpense={addExpenseHandler} />
           <Expenses item={expenses} />
         </div>
       </div>

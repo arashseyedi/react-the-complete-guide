@@ -1,7 +1,7 @@
 .new-expense {
     display: flex;
     justify-content: center;
-    width: 24rem;
+    width: 680px;
     margin: 2rem auto;
     padding: 1.4rem;
     text-align: center;
@@ -9,16 +9,23 @@
     background-color: #dcdcdc;
 }
 
-.new-expense__control {
-    margin-bottom: 15px
+.new-expense__control__title input {
+    width: 180px;
+    border-radius: 4px;
 }
 
-.new-expense__control:last-child {
-    margin-bottom: 25px
+.new-expense__control__amount input {
+    width: 110px;
+    border-radius: 4px;
 }
 
+.new-expense__control__date input {
+    width: 135px;
+    border-radius: 4px;
+}
 
 .new-expense__controls input {
+    padding: 5px;
     border: none;
 }
 
@@ -43,3 +50,26 @@
 /*.new-expense button.alternative:active {*/
 /*    background-color: #ddb3f8;*/
 /*}*/
+
+@media (max-width: 768px) {
+    .new-expense {
+        width: 300px;
+    }
+
+    .new-expense__controls {
+        flex-direction: column;
+    }
+
+    .new-expense__controls input {
+        width: 250px;
+    }
+
+    .new-expense__controls div {
+        margin-bottom: 15px;
+    }
+
+    .new-expense button {
+        margin-top: 15px;
+    }
+
+}
