@@ -70,6 +70,12 @@ function ExpenseForm(props) {
         <button type="submit" className="btn btn-primary">
           Add Expense
         </button>
+        <button
+          type="button"
+          className="btn btn-danger"
+          onClick={props.onCancelHandler}>
+          Cancel
+        </button>
       </div>
     </form>
   );

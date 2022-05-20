@@ -4,7 +4,6 @@ import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
 function ExpenseItem(props) {
-  console.log();
   return (
     <div className="expense-item card">
       <ExpenseDate date={props.date} />
