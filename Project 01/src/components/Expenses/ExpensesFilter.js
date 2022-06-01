@@ -2,8 +2,8 @@ import React from 'react';
 
 import './ExpensesFilter.css';
 
-const ExpensesFilter = (props) => {
-  const dropdownHandler = (e) => {
+const ExpensesFilter = props => {
+  const dropdownHandler = e => {
     props.onChangeFilter(e.target.value);
   };
 

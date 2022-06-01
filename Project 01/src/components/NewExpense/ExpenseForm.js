@@ -7,18 +7,18 @@ function ExpenseForm(props) {
   const [amount, setAmount] = useState('');
   const [date, setDate] = useState('');
 
-  const titleChangeHandler = (e) => {
+  const titleChangeHandler = e => {
     setTitle(e.target.value);
   };
 
-  const amountChangeHandler = (e) => {
+  const amountChangeHandler = e => {
     setAmount(e.target.value);
   };
-  const dateChangeHandler = (e) => {
+  const dateChangeHandler = e => {
     setDate(e.target.value);
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = e => {
     e.preventDefault();
 
     const expenseData = {

@@ -9,12 +9,12 @@ import './Expenses.css';
 function Expenses(props) {
   const [filteredYear, setFilteredYear] = useState('2020');
 
-  const filterChangeHandler = (selectedYear) => {
+  const filterChangeHandler = selectedYear => {
     setFilteredYear(selectedYear);
   };
 
   const filteredExpenses = props.item.filter(
-    (item) => item.date.getFullYear().toString() === filteredYear
+    item => item.date.getFullYear().toString() === filteredYear
   );
 
   return (

@@ -10,8 +10,7 @@ const CourseGoalList = props => {
         <CourseGoalItem
           key={goal.id}
           id={goal.id}
-          onDelete={props.onDeleteItem}
-        >
+          onDelete={props.onDeleteItem}>
           {goal.text}
         </CourseGoalItem>
       ))}

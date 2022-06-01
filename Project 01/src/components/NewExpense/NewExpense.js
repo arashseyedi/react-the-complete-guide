@@ -10,7 +10,7 @@ function NewExpense(props) {
     const idGen = () => Math.random().toString(24).slice(4);
     return idGen() + idGen() + idGen();
   };
-  const saveExpenseDateHandler = (data) => {
+  const saveExpenseDateHandler = data => {
     const expenseData = {
       ...data,
       id: id(),
